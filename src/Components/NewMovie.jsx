@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Joker from "../Assets/joker.jpg";
+import citation from "../Posters/citation.jpg";
 
 class NewMovie extends Component {
   constructor(props) {
@@ -7,8 +7,8 @@ class NewMovie extends Component {
     this.state = {
       newmovie: [
         {
-          image: Joker,
-          title: "Joker",
+          image: citation,
+          title: "Citation",
           year: "2019",
           rating: "5",
         },

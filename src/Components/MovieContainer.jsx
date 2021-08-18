@@ -4,14 +4,13 @@ import { Col, Row } from "reactstrap";
 import MovieList from "./Movie";
 import AddMovie from "./AddMovie";
 
-import Joker from "../Assets/joker.jpg";
-import pacific from "../Assets/pacific.jpg";
-import leo from "../Assets/300.jpg";
-import sherlock from "../Assets/holmes.jpg";
-import avengers from "../Assets/avengers.jpg";
-import inception from "../Assets/inception.jpg";
-import perfume from "../Assets/perfume.jpg";
-import split from "../Assets/split.jpg";
+import chiefdaddy from "../Posters/chiefdaddy.jpg";
+import citation from "../Posters/citation.jpg";
+import kingofboys from "../Posters/kingofboys.jpg";
+import oloture from "../Posters/oloture.jpg";
+import sugarrush from "../Posters/sugarrush.jpg";
+import whoistheboss from "../Posters/whoistheboss.jpg";
+
 
 class MovieContainer extends Component {
   constructor(props) {
@@ -19,53 +18,42 @@ class MovieContainer extends Component {
     this.state = {
       movie: [
         {
-          image: Joker,
-          title: "Joker",
-          year: "2019",
+          image: chiefdaddy,
+          title: "Chief Daddy",
+          year: "2018",
           rating: "5",
         },
         {
-          image: pacific,
-          title: "Pacific Rym",
-          year: "2017",
+          image: citation,
+          title: "Citation",
+          year: "2020",
           rating: "4",
         },
         {
-          image: leo,
-          title: "300",
-          year: "2010",
+          image: kingofboys,
+          title: "King of Boys",
+          year: "2018",
           rating: "4",
         },
         {
-          image: sherlock,
-          title: "sherlock",
-          year: "2015",
+          image: oloture,
+          title: "Oloture",
+          year: "2020",
           rating: "3",
         },
         {
-          image: avengers,
-          title: "avengers",
-          year: "2018",
+          image: sugarrush,
+          title: "Sugar rush",
+          year: "2019",
           rating: "2",
         },
         {
-          image: inception,
-          title: "inception",
-          year: "2012",
+          image: whoistheboss,
+          title: "who is the boss",
+          year: "2020",
           rating: "5",
         },
-        {
-          image: perfume,
-          title: "perfume",
-          year: "2007",
-          rating: "2",
-        },
-        {
-          image: split,
-          title: "split",
-          year: "2018",
-          rating: "4",
-        },
+        
       ],
       modal: false,
     };
