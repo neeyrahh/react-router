@@ -4,6 +4,7 @@ import "./App.css";
 import SearchMovie from "./Components/Search";
 import Ratings from "./Components/Ratings";
 import Withloading from "./Components/WithLoading";
+import {BrowserRouter, Route} from 'react-router-dom'
 
 const Content = Withloading(MovieContainer);
 
@@ -25,7 +26,9 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      
+      <BrowserRouter>
+       <>
         <div className="nav-search">
           <SearchMovie look={this.searchHandler} />
           <div className="stars">
@@ -40,7 +43,13 @@ class App extends Component {
             search={this.state.searchWords}
           />
         </div>
-      </>
+        </>
+        <Route path = '/' component={MovieContainer}/>
+        <Route path = '/searchmovie' component={SearchMovie}/>
+        <Route path = '/ratings' component={Ratings}/>
+        <Route path = '/withloading' component={Withloading}/>
+      </BrowserRouter>
+      
     );
   }
 }
